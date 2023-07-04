@@ -25,7 +25,7 @@ export class LoginComponent {
   }
 
   login() {
-    window.location.href = "/dashboard";
+    window.location.href = "/dashboard/transactions";
   }
 
   

@@ -1,0 +1,18 @@
+<main class="main">
+    <img src="../../../assets/tiaca-logo.svg" alt="tiaca-logo" class="logo">
+    <div class="container">
+        <div class="login-card">
+            <h2>Iniciar sesión con clave dinámica</h2>
+            <p>Hemos enviado un código de verificación
+            al celular<span> (+57) 3158451363</span></p>
+            <div class="inputs-field">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+            </div>
+            <p>Tiempo de espera {{ countdownMinutes.toString().padStart(2, '0') }}:{{ countdownSeconds.toString().padStart(2, '0')}}</p>
+            <button [disabled]="countdownMinutes > 0 || countdownSeconds > 0" (click)="restartCountdown()" >Reenviar código</button>
+        </div>
+    </div>
+</main>

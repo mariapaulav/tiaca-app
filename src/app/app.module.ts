@@ -14,6 +14,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderTableComponent } from './components/table/header-table/header-table.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { FormsModule } from '@angular/forms';
+import { DynamicPwdComponent } from './pages/dynamic-pwd/dynamic-pwd.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { FormsModule } from '@angular/forms';
     TableComponent,
     HeaderTableComponent,
     ModalComponent,
+    DynamicPwdComponent,
 
   ],
   imports: [

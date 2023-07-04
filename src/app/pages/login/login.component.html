@@ -1,11 +1,46 @@
 <main class="main">
-  <img src="../../../assets/tiaca-logo.svg" alt="tiaca-logo">
+  <img src="../../../assets/tiaca-logo.svg" alt="tiaca-logo" class="logo">
   <div class="container">
-      <div class="login-card">
-        <h2>Iniciar sesión</h2>
-        <p>Ingresa tu correo electrónico</p>
-        <app-input label="Correo Electrónico" [width]="'290px'"></app-input>
-        <button>Continuar</button>
-      </div>
+
+    <div *ngIf="!showSecondSection">
+      <form action="submit" #form>
+        <div class="login-card">
+          <h2>Iniciar sesión</h2>
+          <p>Ingresa tu correo electrónico</p>
+          <div class="input-email">
+            <label for="email">Correo electrónico</label>
+            <input type="email" name="email" id="email" #emailInput>
+          </div>
+          <button type="submit" class="button" (click)="continuar(emailInput.value)">Continuar</button>
+        </div>
+      </form>
+    </div>
+
+    <div *ngIf="showSecondSection">
+      <form action="submit">
+        <div class="login-card">
+          <div class="flex-row relative">
+            <button class="arrow-back absolute" (click)="back()">
+              <img src="../../assets/icons/arrow-back.svg" alt="arrow-back">
+            </button>
+            <h2>Iniciar sesión</h2>
+          </div>
+          <p class="user-email input-wrapper">{{userEmail}}</p>
+          <div class="input-email input-wrapper">
+            <label for="email">Contraseña</label>
+            <input [type]="showPassword ? 'text' : 'password'">
+            <button (click)="passwordToggle()">
+              <img *ngIf="showPassword" src="../../../assets/icons/eye-close.svg"/>
+              <img *ngIf="!showPassword" src="../../../assets/icons/eye-open.svg"/>
+            </button>
+          </div>
+          <div class="flex-container">
+            <a href="#" class="dynamic-pwd">Olvidé mi contraseña</a>
+          </div>
+          <button class="button" (click)="login()">Iniciar sesión</button>
+          <a href="" class="dynamic-pwd">Iniciar sesión con clave dinámica</a>
+        </div>
+      </form>
+    </div>
   </div>
 </main>

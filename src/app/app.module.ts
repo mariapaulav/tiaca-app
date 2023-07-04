@@ -13,6 +13,7 @@ import { TableComponent } from './components/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderTableComponent } from './components/table/header-table/header-table.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { ModalComponent } from './components/modal/modal.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

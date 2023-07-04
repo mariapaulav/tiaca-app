@@ -17,9 +17,6 @@
 }
 
 .login-card {
-}
-
-.login-card {
   border-radius: 30px;
   border: 1px solid #707070;
   overflow: hidden;
@@ -43,22 +40,123 @@
   margin: 0;
 }
 
-button {
+.button {
   background: #0136fe;
   border: 1px solid #0136fe;
   border-radius: 30px;
   color: white;
   padding: 8px 50px;
-  margin-top: 20px;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   background: transparent;
   color: #0136fe;
 }
 
-img {
+.logo {
   margin-top: 20px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 10px;
+  border: 0.5px solid #707070;
+  border-radius: 5px;
+  background: transparent;
+}
+
+.input-email {
+  position: relative;
+}
+
+.input-email label {
+  position: absolute;
+  top: -9px;
+  background: white;
+  font-size: 12px;
+  padding: 2px;
+  left: 4px;
+  color: #707070;
+}
+
+.arrow-back {
+  width: 30px;
+  margin-top: 5px;
+  background: transparent;
+  height: fit-content;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow-back img {
+  width: 18px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-email {
+  background: #f2f9f9;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+  z-index: 100;
+  left: -60px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: transparent;
+  border: none;
+}
+
+.input-wrapper button img {
+  height: 100%;
+  width: 20px;
+}
+
+.dynamic-pwd {
+  text-decoration: none;
+  color: #242424;
+  font-family: Satoshi;
+  font-size: 14px;
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.dynamic-pwd:hover {
+  color: #0136fe;
+  text-decoration: underline;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: -20px;
 }
 
 @media screen and (min-width: 768px) {

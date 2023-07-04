@@ -1,0 +1,38 @@
+[
+  {
+    "invoice_id": "FE4506870",
+    "items": 10,
+    "company_name": "Clinica Uno",
+    "company_nit": 900348236,
+    "company_category": "Servicios de salud",
+    "due_date": "18/02/2022",
+    "amount": 300000,
+    "legal_representative_name": "Jesús Caldas",
+    "legal_representative_position": "Administrador",
+    "status": 1
+  },
+  {
+    "invoice_id": "3408000",
+    "items": 9,
+    "company_name": "Consulting",
+    "company_nit": 900650990,
+    "company_category": "Legal",
+    "due_date": "20/04/2023",
+    "amount": 500000,
+    "legal_representative_name": "Maria Vivi",
+    "legal_representative_position": "Administrador",
+    "status": 1
+  },
+  {
+    "invoice_id": "DA00002",
+    "items": 4,
+    "company_name": "Ignacio",
+    "company_nit": 901230969,
+    "company_category": "Distribucion de productos",
+    "due_date": "05/02/2022",
+    "amount": 100000,
+    "legal_representative_name": "Ivan Rodriguez",
+    "legal_representative_position": "Administrador",
+    "status": 1
+  }
+]

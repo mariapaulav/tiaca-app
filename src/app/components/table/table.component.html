@@ -1,0 +1,32 @@
+<main>
+  <div>
+    <div class="orientation">
+      <input type="checkbox">
+      <div>
+        <p class="invoice-id">{{invoice.invoice_id}}</p>
+        <p class="extra-info">{{invoice.items}} items</p>
+      </div>
+      <div>
+        <p>{{invoice.company_name}}</p>
+        <p class="extra-info">NIT {{invoice.company_nit}}</p>
+      </div>
+      <div>
+        <p>{{invoice.company_category}}</p>
+      </div>
+      <div>
+        <p>{{invoice.due_date}}</p>
+      </div>
+      <div>
+        <p>$ {{invoice.amount}}</p>
+      </div>
+      <div>
+        <p>{{invoice.legal_representative_name}}</p>
+        <p class="extra-info">{{invoice.legal_representative_position}}</p>
+      </div>
+      <div>
+        <p>Por pagar</p>
+      </div>
+    </div>
+    <hr>
+  </div>
+</main>

@@ -1,0 +1,79 @@
+header {
+  position: relative;
+  background: white;
+  width: 250px;
+  height: 100%;
+  font-family: SatoshiBold;
+  color: #242424;
+  font-size: 16px;
+}
+
+.logo {
+  margin: 20px 0 15px 0;
+  width: 190px;
+}
+
+li {
+  margin: 5px;
+  padding: 8px;
+  text-decoration: none;
+  color: black;
+}
+
+li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+li img {
+  height: 15px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.active {
+  background: #ece6ff;
+}
+
+.user-profile {
+  box-sizing: border-box;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  background: #f9f9f9;
+  width: 230px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.circle-initial {
+  padding: 10px 13px;
+  background: #819bff;
+  text-align: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.user-info p {
+  margin: 0;
+}
+
+.user-info > p {
+  font-family: SatoshiBold;
+  font-size: 22px;
+}
+
+.user-info p:nth-child(2) {
+  font-family: Satoshi;
+  font-size: 13px;
+  color: #707070;
+}

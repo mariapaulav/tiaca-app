@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Satoshi";
+  src: url("./assets/Satoshi-Regular.otf");
+}
+@font-face {
+  font-family: "SatoshiBold";
+  src: url("./assets/Satoshi-Bold.otf");
+}

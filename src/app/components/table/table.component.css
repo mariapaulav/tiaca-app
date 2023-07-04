@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  width: 100%;
+  background: #d1d1d1;
+  border: none;
+  height: 1.4px;
+  margin: 1rem 0;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: min-content repeat(7, 1fr);
+  list-style: none;
+  font-family: SatoshiBold;
+}
+
+.table-header input {
+  margin-right: 20px;
+}
+
+.orientation {
+  display: grid;
+  grid-template-columns: min-content repeat(7, 1fr);
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.orientation > input {
+  width: fit-content;
+}
+
+.orientation input {
+  margin-right: 15px;
+}
+
+.invoice-id {
+  color: #0136fe;
+}
+
+.extra-info {
+  margin-top: 0.2rem;
+  font-size: 12px;
+  color: #707070;
+}

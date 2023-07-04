@@ -1,0 +1,79 @@
+<main>
+    <button (click)="back()" class="arrow-back">
+      <img src="../../assets/icons/arrow-back.svg" alt="arrow-back">
+    </button>
+    <div class="container">
+      <h2 class="title">Mi perfil</h2>
+        <section class="user-fields">
+          <h4 class="subtitle">Información general</h4>
+          <div class="user-photo">
+            <div class="circle-initial">
+              D
+            </div>
+            <div class="position user-photo-dimentions">
+              <p>Tamaño máximo:</p>
+              <p>720 x 720px, png or jpeg </p>
+            </div>
+          </div>
+          <button class="button">Cargar foto</button>
+          <div class="position-inputs">
+            <app-input  [width]="'300px'" label="Nombres"></app-input>
+            <app-input [width]="'300px'" label="Apellidos"></app-input>
+          </div>
+          <hr>
+        </section>
+        <section class="user-fields">
+          <div class="position-row-subtitle margin-top">
+            <h4 class="subtitle">Celular</h4>
+            <button class="button">Cambiar</button>
+          </div>
+          <div class="position-row">
+            <select >
+              <option value="col">+57</option>
+              <option value="mex">+52</option>
+            </select>
+            <app-input [width]="'230px'" label="Celular"></app-input>
+          </div>
+          <hr>
+        </section>
+        <section class="user-fields">
+          <div class="position-row-subtitle margin-top">
+            <h4 class="subtitle">Correo Electrónico</h4>
+            <button class="button">Cambiar</button>
+          </div>
+            <app-input [width]="'300px'" label="Correo Electrónico"></app-input>
+          <hr>
+        </section>
+        <section class="user-fields">
+          <div class="position-row-subtitle margin-top">
+            <h4 class="subtitle">Contraseña</h4>
+            <button class="button">Cambiar</button>
+          </div>
+          <p class="text">Elige una contraseña segura.</p>
+          <hr>
+        </section>
+        <section class="user-fields">
+          <div class="margin-top">
+            <h4 class="subtitle">Autenticación de dos factores</h4>
+            <p class="text">Mantenga su cuenta segura con nuestro métodos de autenticación multifactor.
+            Debes tener al menos un método habilitado.</p>
+          </div>
+          <div class="position-row-subtitle">
+            <div class="secondary-text">
+              <p>Aplicación de autenticación</p>
+              <p class="text">Una aplicación de autenticación le permite recibir códigos
+              en su teléfono sin tener que recibir mensajes de texto.</p>
+            </div>
+            <button class="button-disabled">Deshabilitar</button>
+          </div>
+          <div class="position-row-subtitle margin-bottom">
+            <div class="secondary-text">
+              <p>Clave dinámica para confirmar acciones</p>
+              <p class="text">Recibirás un SMS en tu celular con un código de verificación.</p>
+            </div>
+            <button class="button-active">Habilitar</button>
+          </div>
+        </section>
+    </div>
+</main>
+

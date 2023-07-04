@@ -1,0 +1,48 @@
+<main>
+  <div class="items-row">
+    <p class="title">Pagos</p>
+    <button class="button">Crear</button>
+  </div>
+
+  <div class="first-section">
+    <nav>
+      <ul class="nav-list">
+        <li><span class="underline-active">Activos</span> <span class="nav-list-badge-active">3</span></li>
+        <li><span>Enviados</span> <span class="nav-list-badge">0</span></li>
+        <li><span>Finalizados</span> <span class="nav-list-badge">0</span></li>
+        <li><span>Pausados</span> <span class="nav-list-badge">0</span></li>
+      </ul>
+    </nav>
+    <div class="items-row-card">
+      <app-info-card title="Total a pagar" description="$600.000" subtitle="Total pagos: 3" additionalInfo="(5 Facturas)"></app-info-card>
+      <hr class="vertical-hr">
+      <app-info-card title="Por vencer en 7 días" description="8 facturas" subtitle="Hoy: 4 facturas"></app-info-card>
+      <hr class="vertical-hr">
+      <app-info-card
+      title="Proveedor mayor monto"
+      description="Clínica de piel"
+      subtitle="Total: $3.000.000">
+      </app-info-card>
+      <hr class="vertical-hr">
+      <app-info-card
+      title="Categoría más frecuente"
+      description="Servicios de salud"
+      subtitle="Frecuencia: 8">
+      </app-info-card>
+    </div>
+  </div>
+  <hr class="hr-horizontal">
+  <div class="items-row">
+    <div class="spacing">
+      <input type="text" name="" id="" class="input-search">
+      <button class="order-button"><img src="../../../assets/icons/order.svg" alt=""><span>Ordenar</span></button>
+    </div>
+    <button class="export-button"><img src="../../../assets/icons/export.svg" alt=""><span>Exportar</span></button>
+  </div>
+  <div class="margin-top">
+    <app-header-table></app-header-table>
+    <app-table [invoice] = "invoice" *ngFor="let invoice of invoices"></app-table>
+  </div>
+  <div>Navigation</div>
+
+</main>

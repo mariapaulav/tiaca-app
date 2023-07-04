@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -13,6 +12,8 @@ import { InfoCardComponent } from './components/info-card/info-card.component';
 import { TableComponent } from './components/table/table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderTableComponent } from './components/table/header-table/header-table.component';
+import { ModalComponent } from './components/modal/modal.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +26,9 @@ import { HeaderTableComponent } from './components/table/header-table/header-tab
     InputComponent,
     InfoCardComponent,
     TableComponent,
-    HeaderTableComponent
+    HeaderTableComponent,
+    ModalComponent,
+
   ],
   imports: [
     BrowserModule,

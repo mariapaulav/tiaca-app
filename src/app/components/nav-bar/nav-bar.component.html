@@ -13,13 +13,31 @@
       <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu5.svg" alt="">Menú 5</a></li>
     </ul>
   </nav>
-  <div class="user-profile">
-    <div class="circle-initial">
-      D
+    <div class="user-profile-container">
+      <app-modal *ngIf="modalOpen" (closeModal)="onCloseModal()">
+        <div class="user-profile-options">
+          <div class="flex-rows">
+            <div class="circle-initial">
+              D
+            </div>
+            <div class="user-info-options">
+              <p>Daniel Gómez</p>
+              <p>ID 25144</p>
+            </div>
+          </div>
+          <hr>
+          <a href="/dashboard/profile">Mi cuenta</a>
+          <a href="#">Cerrar Sesión</a>
+        </div>
+      </app-modal>
+      <div (click)="openModal()" class="user-profile">
+        <div class="circle-initial">
+          D
+        </div>
+        <div class="user-info">
+          <p>Daniel</p>
+          <p>Factory Demo</p>
+        </div>
+      </div>
     </div>
-    <div class="user-info">
-      <p>Daniel</p>
-      <p>Factory Demo</p>
-    </div>
-  </div>
 </header>

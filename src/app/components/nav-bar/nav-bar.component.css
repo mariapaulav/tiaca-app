@@ -41,11 +41,14 @@ ul {
   background: #ece6ff;
 }
 
+.user-profile-container {
+  position: absolute;
+  bottom: 0;
+}
+
 .user-profile {
   box-sizing: border-box;
   padding: 20px;
-  position: absolute;
-  bottom: 0;
   background: #f9f9f9;
   width: 230px;
   margin: 10px;
@@ -53,6 +56,31 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.user-profile-options {
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  width: 230px;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.user-profile-options a {
+  text-decoration: none;
+  color: black;
+  font-family: Satoshi;
+  font-size: 16px;
+}
+
+.user-profile-options a:hover {
+  color: #0136fe;
+  text-decoration: underline;
 }
 
 .circle-initial {
@@ -76,4 +104,33 @@ ul {
   font-family: Satoshi;
   font-size: 13px;
   color: #707070;
+}
+
+.user-info-options p {
+  margin: 0;
+}
+
+.user-info-options > p {
+  font-family: SatoshiBold;
+  font-size: 16px;
+}
+
+.user-info-options p:nth-child(2) {
+  font-family: Satoshi;
+  font-size: 13px;
+  color: #707070;
+}
+
+.flex-rows {
+  display: flex;
+  flex: row;
+  gap: 20px;
+}
+
+hr {
+  width: 100%;
+  background: #d1d1d1;
+  border: none;
+  color: #d1d1d1;
+  min-height: 1.5px;
 }

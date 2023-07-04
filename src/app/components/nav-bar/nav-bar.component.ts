@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
+  modalOpen = false;
 
+  openModal() {
+    this.modalOpen = true;
+  }
+
+  onCloseModal() {
+    this.modalOpen = false;
+  }
 }

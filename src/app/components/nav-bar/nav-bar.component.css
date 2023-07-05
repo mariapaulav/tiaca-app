@@ -151,5 +151,30 @@ hr {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    font-family: Satoshi;
+  }
+
+  .resp-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 9999;
+    background: white;
+  }
+
+  .resp-nav ul li {
+    font-family: SatoshiBold;
+    font-size: 14px;
+  }
+
+  .burger {
+    background: transparent;
+    border: none;
+    padding: 10px;
+  }
+
+  .burger img {
+    width: 50px;
   }
 }

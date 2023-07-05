@@ -44,6 +44,20 @@
   </header>
   <div class="responsive-header">
       <a href="/dashboard"><img src="../../assets/tiaca-logo.svg" class="logo" alt="tiaca-logo"></a>
-      <div class="hamburger-menu">menu</div>
+        <button class="burger" (click)="toggleMenu()"><img src="../../../assets/icons/burger-menu.png" alt=""></button>
+        <nav class="resp-nav">
+          <ul [hidden]="!showMenu">
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu1.svg" alt="">Menú 1</a></li>
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu2.svg" alt="">Menú 2</a></li>
+            <li routerLinkActive="active"><a routerLink="/dashboard/transactions"><img src="../../assets/icons/pagos.svg" alt="">Pagos</a></li>
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu3.svg" alt="">Menú 3</a></li>
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/bancos.svg" alt="">Bancos</a></li>
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu4.svg" alt="">Menú 4</a></li>
+            <li routerLinkActive="active"><a routerLink="#"><img src="../../assets/icons/menu5.svg" alt="">Menú 5</a></li>
+            <li routerLinkActive="active"><a routerLink="/dashboard/profile"><img src="../../assets/icons/pagos.svg" alt="">Mi cuenta</a></li>
+            <li routerLinkActive="active"><a routerLink="/login"><img src="../../assets/icons/menu5.svg" alt="">Cerrar Sesión</a></li>
+
+          </ul>
+        </nav>
   </div>
 </div>

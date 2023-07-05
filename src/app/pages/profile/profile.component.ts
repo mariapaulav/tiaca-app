@@ -14,15 +14,13 @@ export class ProfileComponent {
   back(): void {
     this.location.back()
   }
+  
   ScreenLarge!: boolean;
   largeWidth: string = '200px';
   smallWidth: string = '150px';
-
-  
 
   @HostListener('window:resize', ['$event'])
   onResize() {
     this.ScreenLarge = window.innerWidth > 768;
   }
-
 }

@@ -17,8 +17,8 @@
           </div>
           <button class="button">Cargar foto</button>
           <div class="position-inputs">
-            <app-input  [width]="'300px'" label="Nombres"></app-input>
-            <app-input [width]="'300px'" label="Apellidos"></app-input>
+            <app-input [width]="ScreenLarge ? '300px' : '250px'" label="Nombres"></app-input>
+            <app-input [width]="ScreenLarge ? '300px' : '250px'"label="Apellidos"></app-input>
           </div>
           <hr>
         </section>
@@ -27,12 +27,12 @@
             <h4 class="subtitle">Celular</h4>
             <button class="button">Cambiar</button>
           </div>
-          <div class="position-row">
+          <div class="position-row-phone">
             <select >
               <option value="col">🇨🇴 +57</option>
               <option value="mex">🇲🇽 +52</option>
             </select>
-            <app-input [width]="'230px'" label="Celular"></app-input>
+            <app-input [width]="ScreenLarge ? '300px' : '250px'" label="Celular"></app-input>
           </div>
           <hr>
         </section>
@@ -41,7 +41,7 @@
             <h4 class="subtitle">Correo Electrónico</h4>
             <button class="button">Cambiar</button>
           </div>
-            <app-input [width]="'300px'" label="Correo Electrónico"></app-input>
+            <app-input [width]="ScreenLarge ? '300px' : '250px'"label="Correo Electrónico"></app-input>
           <hr>
         </section>
         <section class="user-fields">

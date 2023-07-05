@@ -18,18 +18,17 @@ hr {
   font-family: SatoshiBold;
 }
 
-.table-header input {
-  margin-right: 20px;
-}
-
 .orientation {
   display: grid;
-  grid-template-columns: min-content repeat(7, 1fr);
+  grid-template-columns: max-content repeat(7, 1fr);
   margin-top: 1rem;
   align-items: center;
   font-size: 1rem;
 }
 
+.orientation > *:not(:first-child) {
+  min-width: 120px;
+}
 .orientation > input {
   width: fit-content;
 }
@@ -46,4 +45,14 @@ hr {
   margin-top: 0.2rem;
   font-size: 12px;
   color: #707070;
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-hr {
+    display: none;
+  }
+
+  .responsive-spacing {
+    margin: 25px 0;
+  }
 }

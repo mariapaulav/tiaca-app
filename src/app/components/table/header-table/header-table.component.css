@@ -18,6 +18,19 @@ hr {
   font-family: SatoshiBold;
 }
 
+.table-header > *:not(:first-child) {
+  min-width: 120px;
+}
+
 .table-header input {
   margin-right: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-hr {
+    display: none;
+  }
+  .table-header {
+    margin-bottom: 16px;
+  }
 }

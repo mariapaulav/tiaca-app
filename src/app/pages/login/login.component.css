@@ -24,13 +24,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px 10px;
-  gap: 20px;
+  padding: 60px 80px;
+  gap: 25px;
 }
 
 .login-card h2 {
   font-family: SatoshiBold;
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 700px;
   margin: 0;
 }
@@ -159,18 +159,21 @@ input {
   margin-top: -20px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .login-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 60px 80px;
-    gap: 25px;
+    padding: 10px 20px;
+    gap: 20px;
   }
 
   .login-card h2 {
-    font-size: 30px;
-    margin: 0;
+    font-size: 20px;
+  }
+
+  input {
+    width: 250px;
+  }
+
+  .flex-container {
+    margin-top: -10px;
   }
 }

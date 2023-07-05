@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener} from '@angular/core';
 import { Location } from '@angular/common'
 
 @Component({
@@ -7,9 +7,22 @@ import { Location } from '@angular/common'
   styleUrls: ['./profile.component.css']
 })
 export class ProfileComponent {
-  constructor(public location: Location) {}
+  constructor(public location: Location) {
+    this.onResize();
+  }
 
   back(): void {
     this.location.back()
   }
+  ScreenLarge!: boolean;
+  largeWidth: string = '200px';
+  smallWidth: string = '150px';
+
+  
+
+  @HostListener('window:resize', ['$event'])
+  onResize() {
+    this.ScreenLarge = window.innerWidth > 768;
+  }
+
 }

@@ -32,17 +32,19 @@
     </div>
   </div>
   <hr class="hr-horizontal">
-  <div class="items-row">
+  <div class="items-row-search">
     <div class="spacing">
       <input type="text" name="" id="" class="input-search">
-      <button class="order-button"><img src="../../../assets/icons/order.svg" alt=""><span>Ordenar</span></button>
+      <button class="order-button"><img src="../../../assets/icons/order.svg" alt=""><span class="order-button-span">Ordenar</span></button>
     </div>
     <button class="export-button"><img src="../../../assets/icons/export.svg" alt=""><span>Exportar</span></button>
   </div>
   <div class="margin-top">
-    <app-header-table></app-header-table>
-    <app-table [invoice] = "invoice" *ngFor="let invoice of invoices"></app-table>
+    <div class="table-responsive">
+      <app-header-table></app-header-table>
+      <app-table [invoice] = "invoice" *ngFor="let invoice of invoices"></app-table>
+    </div>
     <app-pagination-table></app-pagination-table>
   </div>
-
 </main>
+

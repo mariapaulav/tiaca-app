@@ -35,3 +35,23 @@ select {
   color: #171717;
   padding: 6px 10px;
 }
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container p {
+    margin: 0;
+  }
+
+  .pagination {
+    gap: 2px;
+  }
+}

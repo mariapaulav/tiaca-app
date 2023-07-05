@@ -137,6 +137,8 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  position: relative;
+  width: 100%;
 }
 
 .user-photo {
@@ -192,6 +194,89 @@ select {
   font-family: Satoshi;
 }
 
+.modal-img {
+  width: 100%;
+  height: 100%;
+  background: #00000080;
+  position: absolute;
+  z-index: 100;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container {
+  background: #242424;
+  width: 300px;
+  max-height: 290px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 25px 20px 25px;
+  gap: 20px;
+  position: relative;
+}
+
+.modal-img-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.modal-img-container img:first-child {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #ffffff;
+  position: absolute;
+  z-index: 100;
+}
+
+.modal-img-container img:nth-child(2) {
+  width: 170px;
+  height: 170px;
+  opacity: 0.1;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  font-family: Satoshi;
+  font-size: 10px;
+  color: #ffffff;
+  padding: 0;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.modal-list li img {
+  width: 15px;
+}
+
+.save-button {
+  background: transparent;
+  border-radius: 30px;
+  font-family: Satoshi;
+  font-size: 10px;
+  color: #ffffff;
+  border: 1px solid white;
+  padding: 6px 30px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background: white;
+  color: #242424;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 10px;
@@ -223,5 +308,15 @@ select {
   .button-disabled {
     padding: 4px 16px;
     font-size: 13px;
+  }
+
+  .modal-container {
+    width: 200px;
+    max-height: 290px;
+    position: fixed;
+  }
+
+  .modal-img {
+    position: fixed;
   }
 }

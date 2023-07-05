@@ -15,7 +15,7 @@
               <p>720 x 720px, png or jpeg </p>
             </div>
           </div>
-          <button class="button">Cargar foto</button>
+          <button class="button" (click)="openModal()">Cargar foto</button>
           <div class="position-inputs">
             <app-input [width]="ScreenLarge ? '300px' : '250px'" label="Nombres"></app-input>
             <app-input [width]="ScreenLarge ? '300px' : '250px'"label="Apellidos"></app-input>
@@ -75,5 +75,23 @@
           </div>
         </section>
     </div>
+    <app-modal *ngIf="modalOpen" (closeModal)="onCloseModal()">
+      <div class="modal-img">
+        <div class="modal-container">
+          <div class="modal-img-container">
+            <img src="../../../assets/profile-photo.png" alt="">
+            <img src="../../../assets/profile-photo.png" alt="">
+          </div>
+          <ul class="modal-list">
+            <li><img src="../../../assets/icons/circle-arrow.svg" alt=""></li>
+            <li><img src="../../../assets/icons/crop.svg" alt=""></li>
+            <li>Restablecer</li>
+          </ul>
+          <button class="save-button" (click)="onCloseModal()">Guardar</button>
+        </div>
+      </div>
+    </app-modal>
 </main>
+
+
 

@@ -23,4 +23,15 @@ export class ProfileComponent {
   onResize() {
     this.ScreenLarge = window.innerWidth > 768;
   }
+
+  modalOpen = false;
+
+  openModal() {
+    this.modalOpen = true;
+  }
+
+  onCloseModal() {
+    this.modalOpen = false;
+  }
+
 }

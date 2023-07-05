@@ -277,6 +277,13 @@ select {
   color: #242424;
 }
 
+.user-img-updated {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 10px;

@@ -25,6 +25,7 @@ export class ProfileComponent {
   }
 
   modalOpen = false;
+  mostrarFoto: boolean = false;
 
   openModal() {
     this.modalOpen = true;
@@ -32,6 +33,7 @@ export class ProfileComponent {
 
   onCloseModal() {
     this.modalOpen = false;
+    this.mostrarFoto = true;
   }
 
 }

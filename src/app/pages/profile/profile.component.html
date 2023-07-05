@@ -6,15 +6,18 @@
       <h2 class="title">Mi perfil</h2>
         <section class="user-fields">
           <h4 class="subtitle">Información general</h4>
-          <div class="user-photo">
-            <div class="circle-initial">
-              D
+            <div class="user-photo">
+              <div *ngIf="mostrarFoto" class="user-photo-dimentions">
+                <img class="user-img-updated" src="../../../assets/profile-photo.png" alt="user-photo">
+              </div>
+              <div *ngIf="!mostrarFoto" class="circle-initial">
+                D
+              </div>
+              <div class="position user-photo-dimentions">
+                <p>Tamaño máximo:</p>
+                <p>720 x 720px, png or jpeg </p>
+              </div>
             </div>
-            <div class="position user-photo-dimentions">
-              <p>Tamaño máximo:</p>
-              <p>720 x 720px, png or jpeg </p>
-            </div>
-          </div>
           <button class="button" (click)="openModal()">Cargar foto</button>
           <div class="position-inputs">
             <app-input [width]="ScreenLarge ? '300px' : '250px'" label="Nombres"></app-input>

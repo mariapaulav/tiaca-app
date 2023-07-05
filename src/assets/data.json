@@ -21,7 +21,7 @@
     "amount": 500000,
     "legal_representative_name": "Maria Vivi",
     "legal_representative_position": "Administrador",
-    "status": 1
+    "status": 2
   },
   {
     "invoice_id": "DA00002",
@@ -33,6 +33,6 @@
     "amount": 100000,
     "legal_representative_name": "Ivan Rodriguez",
     "legal_representative_position": "Administrador",
-    "status": 1
+    "status": 3
   }
 ]

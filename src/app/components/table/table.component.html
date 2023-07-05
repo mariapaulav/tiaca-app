@@ -24,7 +24,7 @@
         <p class="extra-info">{{invoice.legal_representative_position}}</p>
       </div>
       <div>
-        <p>Por pagar</p>
+        <app-badge [class]="getBadgeClass(invoice.status.toString())" [text]="getBadgeText(invoice.status.toString())"></app-badge>
       </div>
     </div>
     <hr>

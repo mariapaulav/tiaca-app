@@ -15,6 +15,8 @@ import { HeaderTableComponent } from './components/table/header-table/header-tab
 import { ModalComponent } from './components/modal/modal.component';
 import { FormsModule } from '@angular/forms';
 import { DynamicPwdComponent } from './pages/dynamic-pwd/dynamic-pwd.component';
+import { PaginationTableComponent } from './components/table/pagination-table/pagination-table.component';
+import { BadgeComponent } from './components/badge/badge.component';
 
 
 @NgModule({
@@ -31,6 +33,8 @@ import { DynamicPwdComponent } from './pages/dynamic-pwd/dynamic-pwd.component';
     HeaderTableComponent,
     ModalComponent,
     DynamicPwdComponent,
+    PaginationTableComponent,
+    BadgeComponent,
 
   ],
   imports: [

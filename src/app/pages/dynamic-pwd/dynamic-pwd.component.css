@@ -8,7 +8,7 @@
   height: 100vh;
   font-family: Satoshi;
   color: #242424;
-  background-image: url("../../../../assets/fondo-milio.svg");
+  background-image: url("../../../assets/fondo-milio.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }

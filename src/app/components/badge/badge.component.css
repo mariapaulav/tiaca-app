@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.pending {
+  background: #e6f8ff;
+  width: fit-content;
+  color: #0136fe;
+  padding: 6px 15px;
+  border-radius: 30px;
+}
+
+.paid {
+  background: #d2f4c6;
+  width: fit-content;
+  color: #326300;
+  padding: 6px 15px;
+  border-radius: 30px;
+}
+
+.in-arrears {
+  background: #ffcece;
+  width: fit-content;
+  color: #ff0000;
+  padding: 6px 15px;
+  border-radius: 30px;
+}

@@ -36,6 +36,7 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
 }
 
 .items-row-search {
@@ -79,7 +80,7 @@ li {
 .nav-list {
   display: flex;
   flex-direction: row;
-  align-item: flex-start;
+  align-items: flex-start;
   gap: 70px;
   list-style: none;
   margin: 0;
@@ -213,6 +214,25 @@ hr {
   margin-top: 40px;
 }
 
+.toast {
+  position: absolute;
+  top: 55px;
+  right: 40px;
+  display: flex;
+  border-radius: 5px;
+  border: 1px solid #242424;
+  border-left: 8px solid #0136fe;
+  background-color: white;
+  padding: 5px 10px 5px 10px;
+  z-index: 20px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.toast img {
+  width: 50px;
+}
+
 @media screen and (max-width: 768px) {
   main {
     gap: 30px;
@@ -269,5 +289,12 @@ hr {
     width: 100%;
     overflow: auto;
     position: relative;
+  }
+
+  .toast {
+    top: 120px;
+    right: 10px;
+    padding: 4px 8px 4px 8px;
+    font-size: 16px;
   }
 }

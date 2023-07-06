@@ -1,9 +1,8 @@
 <main>
   <div class="items-row">
     <p class="title">Pagos</p>
-    <button class="button">Crear</button>
+    <button class="button" (click)="openModal()">Crear</button>
   </div>
-
   <div class="first-section">
     <nav>
       <ul class="nav-list">
@@ -46,5 +45,11 @@
     </div>
     <app-pagination-table></app-pagination-table>
   </div>
+  <app-modal *ngIf="modalOpen">
+    <div class="toast">
+      <img src="../../../assets/icons/check.svg" alt="check">
+      <p>Cambio exitoso</p>
+    </div>
+  </app-modal>
 </main>
 

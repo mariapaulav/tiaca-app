@@ -18,9 +18,7 @@
           <app-modal *ngIf="modalOpen" (closeModal)="onCloseModal()">
             <div class="user-profile-options">
               <div class="flex-rows">
-                <div class="circle-initial">
-                  D
-                </div>
+                <img src="../../../assets/modal-pic.png" alt="">
                 <div class="user-info-options">
                   <p>Daniel Gómez</p>
                   <p>ID 25144</p>
@@ -28,7 +26,7 @@
               </div>
               <hr>
               <a routerLink="/dashboard/profile">Mi cuenta</a>
-              <a href="#">Cerrar Sesión</a>
+              <a href="#" class="logout">Cerrar Sesión</a>
             </div>
           </app-modal>
           <div (click)="openModal()" class="user-profile">

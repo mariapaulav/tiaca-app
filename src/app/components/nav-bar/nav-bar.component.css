@@ -56,6 +56,7 @@ ul {
   display: flex;
   flex-direction: row;
   gap: 20px;
+  cursor: pointer;
 }
 
 .user-profile-options {
@@ -125,6 +126,7 @@ ul {
   display: flex;
   flex: row;
   gap: 20px;
+  align-items: center;
 }
 
 hr {
@@ -137,6 +139,12 @@ hr {
 
 .responsive-header {
   display: none;
+}
+
+.logout {
+  background: #f2fcff;
+  width: fit-content;
+  padding: 8px 8px 8px 0;
 }
 
 @media screen and (max-width: 768px) {

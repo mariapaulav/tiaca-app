@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -10,6 +11,12 @@ export class LoginComponent {
   showPassword!:boolean;
   showSecondSection: boolean = false;
 
+
+  constructor(private router: Router) {}
+  login() {
+    this.router.navigateByUrl('/dashboard/transactions');
+  }
+  
   continuar(email: string) {
     this.userEmail = email;
     this.showSecondSection = true;
@@ -23,11 +30,4 @@ export class LoginComponent {
     this.userEmail = '';
     this.showSecondSection = false;
   }
-
-  login() {
-    window.location.href = "/dashboard/transactions";
-  }
-
-  
-
 }

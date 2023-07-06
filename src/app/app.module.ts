@@ -17,6 +17,7 @@ import { FormsModule } from '@angular/forms';
 import { DynamicPwdComponent } from './pages/dynamic-pwd/dynamic-pwd.component';
 import { PaginationTableComponent } from './components/table/pagination-table/pagination-table.component';
 import { BadgeComponent } from './components/badge/badge.component';
+import { PhoneCodeInputComponent } from './components/phone-code-input/phone-code-input.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { BadgeComponent } from './components/badge/badge.component';
     DynamicPwdComponent,
     PaginationTableComponent,
     BadgeComponent,
+    PhoneCodeInputComponent,
 
   ],
   imports: [

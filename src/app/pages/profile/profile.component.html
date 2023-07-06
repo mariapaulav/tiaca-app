@@ -30,7 +30,30 @@
             <h4 class="subtitle">Celular</h4>
             <button class="button">Cambiar</button>
           </div>
-          <!-- here -->
+          <div class="position-row-phone">
+            <div class="custom-select">
+              <span class="selected-option">
+                <img [src]="selectedImage || '../../../assets/icons/col-flag.png'" alt="colombia-flag" width="20px" height="20px">
+                + {{ selectedValue || user.phonecode }}
+                <img class="arrow-down" width="20px" height="20px" src="../../../assets/icons/down.png" alt="">
+              </span>
+              <ul class="options-list" *ngIf="!isOpen">
+                <li (click)="selectOption(user.phonecode, '../../../assets/icons/col-flag.png')">
+                  <img src="../../../assets/icons/col-flag.png" alt="colombia-flag" width="20px" height="20px">
+                  + {{ user.phonecode }}
+                </li>
+                <li (click)="selectOption('52', '../../../assets/icons/mex-flag.png')">
+                  <img src="../../../assets/icons/mex-flag.png" alt="mexico-flag" width="20px" height="20px">
+                  + 52
+                </li>
+                <li (click)="selectOption('54', '../../../assets/icons/arg-flag.png')">
+                  <img src="../../../assets/icons/arg-flag.png" alt="argentina-flag" width="20px" height="20px">
+                  + 54
+                </li>
+              </ul>
+            </div>
+            <app-input [value]="user.phone" [width]="ScreenLarge ? '300px' : '250px'" label="Celular" [type]="'text'" [name]="'phone'"></app-input>
+          </div>
           <hr>
         </section>
         <section class="user-fields">

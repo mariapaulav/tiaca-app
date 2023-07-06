@@ -284,6 +284,55 @@ select {
   object-fit: cover;
 }
 
+//select
+
+.custom-select {
+  position: relative;
+}
+
+.selected-option {
+  display: flex;
+  padding: 9px;
+  border: 0.5px solid #707070;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+
+.options-list {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #707070;
+  border-radius: 5px;
+  display: none;
+  z-index: 10;
+  width: 105px;
+}
+
+.options-list li {
+  padding: 5px 5px 5px 10px;
+  cursor: pointer;
+}
+
+.options-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.custom-select.open .options-list {
+  display: block;
+}
+
+.arrow-down {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 768px) {
   main {
     padding: 10px;

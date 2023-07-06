@@ -14,34 +14,30 @@ export class ProfileComponent {
     this.onResize();
   }
 
-  // go back to page
+
   back(): void {
     this.location.back()
   }
-  // screen size for input width
+
   ScreenLarge!: boolean;
-  largeWidth: string = '200px';
-  smallWidth: string = '150px';
 
   @HostListener('window:resize', ['$event'])
-  onResize() {
-    this.ScreenLarge = window.innerWidth > 768;
-  }
+    onResize() {
+      this.ScreenLarge = window.innerWidth > 768;
+    }
 
-  // modal functions to display uploading image
-  modalOpen = false;
-  mostrarFoto: boolean = false;
+    modalOpen = false;
+    showPhoto: boolean = false;
 
-  openModal() {
-    this.modalOpen = true;
-  }
+    openModal() {
+      this.modalOpen = true;
+    }
 
-  onCloseModal() {
-    this.modalOpen = false;
-    this.mostrarFoto = true;
-  }
+    onCloseModal() {
+      this.modalOpen = false;
+      this.showPhoto = true;
+    }
 
-  //user-request
   http=inject(HttpClient)
   user: User = {
     name: '',
@@ -51,11 +47,29 @@ export class ProfileComponent {
     email: ''
   };
 
-  ngOnInit() {
-    this.http.get<User>('../../../assets/user.json')
-    .subscribe(data => {
-      this.user = data;
-      console.log(data)
-    });
-  }
+    ngOnInit() {
+      this.http.get<User>('../../../assets/user.json')
+      .subscribe(data => {
+        this.user = data;
+
+        const customSelect = document.querySelector(".custom-select")!;
+        const selectedOption = customSelect.querySelector(".selected-option")!;
+
+        selectedOption.addEventListener("click", function () {
+          customSelect.classList.toggle("open");
+          });
+        });
+      }
+      selectedValue!: string; 
+      selectedImage!: string; 
+      isOpen = false;
+
+      selectOption(value: string, imagePath: string): void {
+        this.selectedValue = value;
+        this.selectedImage = imagePath;
+        const customSelect = document.querySelector(".custom-select");
+        if (customSelect) {
+          customSelect.classList.remove("open"); // Remueve la clase "open" para cerrar la lista
+        }
+      }
 }

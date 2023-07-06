@@ -1,6 +1,20 @@
+.subtitle,
+.title {
+  font-family: SatoshiBold;
+}
+.position-row,
+.position-row-phone,
 main {
+  flex-direction: row;
+  gap: 15px;
+  display: flex;
+}
+main,
+select {
   box-sizing: border-box;
-  background: white;
+}
+main {
+  background: #fff;
   margin: 20px;
   border-radius: 20px;
   overflow: auto;
@@ -8,17 +22,12 @@ main {
   height: 95%;
   padding: 40px;
   font-family: Satoshi;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
 }
-
 h2,
 h4,
 p {
   margin: 0;
 }
-
 hr {
   width: 100%;
   background: #d1d1d1;
@@ -26,113 +35,84 @@ hr {
   color: #d1d1d1;
   height: 1.5px;
 }
-
 .arrow-back {
   width: 30px;
   margin-top: 5px;
-  background: transparent;
+  background: 0 0;
   height: fit-content;
   border: none;
   cursor: pointer;
 }
-
 .arrow-back img {
   width: 18px;
 }
-
 .container {
   width: 100%;
 }
-
 .title {
   margin-bottom: 3rem;
-  font-family: SatoshiBold;
 }
-
-.subtitle {
-  font-family: SatoshiBold;
-}
-
 .text {
   color: #707070;
   width: 50%;
 }
-
+.button,
+.button-active,
+.button-disabled {
+  padding: 6px 20px;
+  width: fit-content;
+  cursor: pointer;
+  font-family: SatoshiBold;
+}
 .button {
   color: #0136fe;
   border: 1px solid #0136fe;
   border-radius: 30px;
-  background: transparent;
-  font-family: SatoshiBold;
-  padding: 6px 20px;
-  width: fit-content;
-  cursor: pointer;
+  background: 0 0;
 }
-
+.button-active,
 .button:hover {
   background: #0136fe;
-  color: white;
+  color: #fff;
 }
-
 .button-active {
-  background: #0136fe;
   border: 1px solid #0136fe;
   border-radius: 30px;
-  font-family: SatoshiBold;
-  padding: 6px 20px;
-  width: fit-content;
-  cursor: pointer;
-  color: white;
 }
-
 .button-active:hover {
-  background: transparent;
+  background: 0 0;
   color: #0136fe;
 }
-
 .button-disabled {
   background: #f1f1f1;
   border: 1px solid #f1f1f1;
   border-radius: 30px;
-  font-family: SatoshiBold;
-  padding: 6px 20px;
-  width: fit-content;
-  cursor: pointer;
   color: #0136fe;
 }
-
+.user-photo-dimentions,
+select {
+  color: #707070;
+  font-size: 13px;
+}
 .button-disabled:hover {
   background: #bcbcbc;
-  color: white;
+  color: #fff;
 }
-
 .position {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
-.position-row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 15px;
-}
-
+.position-row,
 .position-row-phone {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 15px;
 }
-
 .position-row-subtitle {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-
 .user-fields {
   display: flex;
   flex-direction: column;
@@ -140,50 +120,57 @@ hr {
   position: relative;
   width: 100%;
 }
-
 .user-photo {
   display: flex;
   flex-direction: row;
   gap: 20px;
 }
-
-.user-photo-dimentions {
-  color: #707070;
-  font-size: 13px;
+.modal-img,
+.position-inputs {
+  flex-direction: column;
+  display: flex;
 }
-
 .circle-initial {
   padding: 25px 28px;
   background: #819bff;
   text-align: center;
   border-radius: 50%;
-  color: white;
+  color: #fff;
 }
-
+.selected-option,
+select {
+  border: 0.5px solid #707070;
+}
 .position-inputs {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 20px;
 }
-
 .margin-top {
   margin-top: 25px;
 }
-
 .margin-bottom {
   margin-bottom: 55px;
 }
-
+select {
+  padding: 10px;
+  border-radius: 5px;
+  background: 0 0;
+}
 .secondary-text {
   font-size: 13px;
   font-family: SatoshiBold;
 }
-
+.modal-list,
+.save-button {
+  font-size: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+.modal-list,
+.save-button,
 .secondary-text p:nth-child(2) {
   font-family: Satoshi;
 }
-
 .modal-img {
   width: 100%;
   height: 100%;
@@ -191,12 +178,13 @@ hr {
   position: absolute;
   z-index: 100;
   inset: 0;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.custom-select,
+.modal-container {
+  position: relative;
+}
 .modal-container {
   background: #242424;
   width: 300px;
@@ -206,113 +194,119 @@ hr {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 60px 25px 20px 25px;
+  padding: 60px 25px 20px;
   gap: 20px;
-  position: relative;
 }
-
 .modal-img-container {
   position: relative;
   display: flex;
   justify-content: center;
 }
-
 .modal-img-container img:first-child {
   width: 160px;
   height: 160px;
   object-fit: cover;
   border-radius: 50%;
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
   position: absolute;
   z-index: 100;
 }
-
 .modal-img-container img:nth-child(2) {
   width: 170px;
   height: 170px;
   opacity: 0.1;
 }
-
 .modal-list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
-  font-family: Satoshi;
-  font-size: 10px;
-  color: #ffffff;
   padding: 0;
   gap: 20px;
-  cursor: pointer;
 }
-
 .modal-list li img {
   width: 15px;
 }
-
 .save-button {
-  background: transparent;
+  background: 0 0;
   border-radius: 30px;
-  font-family: Satoshi;
-  font-size: 10px;
-  color: #ffffff;
-  border: 1px solid white;
+  border: 1px solid #fff;
   padding: 6px 30px;
-  cursor: pointer;
 }
-
 .save-button:hover {
-  background: white;
+  background: #fff;
   color: #242424;
 }
-
 .user-img-updated {
   border-radius: 50%;
   width: 65px;
   height: 65px;
   object-fit: cover;
 }
-
+.selected-option {
+  display: flex;
+  padding: 9px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+.options-list {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 0.5px solid #707070;
+  border-radius: 5px;
+  display: none;
+  z-index: 10;
+  width: 105px;
+}
+.options-list li {
+  padding: 5px 5px 5px 10px;
+  cursor: pointer;
+}
+.options-list li:hover {
+  background-color: #f0f0f0;
+}
+.custom-select.open .options-list {
+  display: block;
+}
+.arrow-down {
+  margin-left: 5px;
+}
 @media screen and (max-width: 768px) {
   main {
     padding: 10px;
     margin: 10px;
     gap: 5px;
   }
-
   .margin-top .text {
     width: 90%;
   }
-
   .secondary-text .text {
     width: 70%;
   }
-
   .position-row-phone {
     flex-direction: column;
     align-items: flex-start;
   }
-  .button {
-    padding: 4px 16px;
-    font-size: 13px;
-  }
-  .button-active {
-    padding: 4px 16px;
-    font-size: 13px;
-  }
-
+  .button,
+  .button-active,
   .button-disabled {
     padding: 4px 16px;
     font-size: 13px;
   }
-
   .modal-container {
     width: 200px;
     max-height: 290px;
     position: fixed;
   }
-
   .modal-img {
     position: fixed;
   }

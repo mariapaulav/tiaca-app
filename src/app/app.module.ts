@@ -17,7 +17,6 @@ import { FormsModule } from '@angular/forms';
 import { DynamicPwdComponent } from './pages/dynamic-pwd/dynamic-pwd.component';
 import { PaginationTableComponent } from './components/table/pagination-table/pagination-table.component';
 import { BadgeComponent } from './components/badge/badge.component';
-import { CodeInputComponent } from './components/code-input/code-input.component';
 
 
 @NgModule({
@@ -36,7 +35,6 @@ import { CodeInputComponent } from './components/code-input/code-input.component
     DynamicPwdComponent,
     PaginationTableComponent,
     BadgeComponent,
-    CodeInputComponent,
 
   ],
   imports: [
